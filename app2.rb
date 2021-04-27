@@ -39,8 +39,8 @@ a - Choisir une meilleure arme ?
 s - chercher à te soigner ? 
 
 Vite tu devras ensuite attaquer un des deux monstres si tu veux gagner:
-0 -#{player_1.name} a #{player_1.get_damage(damage_receive)}points de vie
-1 -#{player_2.name} a #{player_2.get_damage(damage_receive)}points de vie"
+0 -#{player_1.name} a #{player_1.life_point}points de vie
+1 -#{player_2.name} a #{player_2.life_point}points de vie"
 
  x = gets.chomp
  print"=>"
