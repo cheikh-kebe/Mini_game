@@ -36,6 +36,7 @@ end
 
 class HumanPlayer < Player
   attr_accessor :weapon_level
+  
   def initialize(name)
     @weapon_level= 1
       super(name)

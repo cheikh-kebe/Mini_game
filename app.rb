@@ -14,18 +14,20 @@ puts "🗣 À ma gauche : #{player_2.name}, le demon venu du village Gérudo!!"
 puts""
 puts "----------Présentons les deux combattants:----------"
 puts "" 
+sleep 1
 player_1.show_state
 puts ""
 player_2.show_state
 puts ""
 puts "" 
+sleep 1
 while player_1.life_point > 0 && player_2.life_point >0 
   puts"---------------------FIGHT----------------------------"
   puts "Passons à la phase d'attaque:"
 
   player_1.attacks(player_2)
   if player_2.life_point <= 0
-      break
+    break
   end
 
   player_2.attacks(player_1)

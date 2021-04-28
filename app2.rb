@@ -14,6 +14,7 @@ puts"Choose your character name :!!!"
 user_player  = gets.chomp.to_s# choix du personnage avec input gets.chomp
 human_player = HumanPlayer.new("#{user_player}")#création du human_player a partir de la class HumanPlayer
 puts""
+sleep 1
 puts"Bienvenue a toi mon cher porteur de lumiere : #{user_player.upcase}"
 puts"---------------------------------------"
 player_1  = Player.new("King dodongo")#création du player_1
@@ -29,6 +30,7 @@ puts"|                                     |"
 puts"|            LET'S FIGHT              |"
 puts"|                                     |"
 puts"---------------------------------------"
+sleep 1 
 while human_player.life_point > 0 && player_1.life_point > 0 || player_2.life_point > 0 do#condition tant que les players ont des life_point superieurs a0 alors le jeu continue
   puts""
 
