@@ -33,9 +33,7 @@ while player_1.life_point > 0 && player_2.life_point >0
     puts""
     puts"-----------------------Voici l'état des joueurs------------------------------"
     player_1.show_state
-    Puts""
+    puts""
     player_2.show_state
   end
 end
-
-binding.pry
